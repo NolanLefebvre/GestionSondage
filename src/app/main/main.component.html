@@ -1,0 +1,9 @@
+<div class="sondage" *ngFor="let sondage of sondages">
+  <div class="sondage-container">
+    <h2 class="sondage-titre">{{ sondage.Titre }}</h2>
+    <p class="sondage-date">Date: {{ sondage.Date }}</p>
+    <p class="sondage-description">Description: {{ sondage.Description }}</p>
+    <p class="sondage-auteur">Auteur: {{ sondage.Auteur }}</p>
+    <button [routerLink]="['/voter', sondage.id]" [disabled]="!token">Voter</button>
+  </div>
+</div>

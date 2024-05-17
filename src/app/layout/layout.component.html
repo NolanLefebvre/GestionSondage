@@ -1,0 +1,9 @@
+<div class="bar">
+    <span class="title">PALMOODLE</span>
+    <div class="buttons">
+        <button (click)="redirectToMain()">Accueil</button>
+        <button *ngIf="isLoggedOut" (click)="redirectToConnection()">Connexion</button>
+        <button *ngIf="isLoggedIn" (click)="logout()">Déconnexion</button>
+        
+    </div>
+</div>

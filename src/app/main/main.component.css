@@ -1,0 +1,53 @@
+/* Style pour la classe "sondage" */
+.sondage {
+    list-style-type: none; /* Supprime les puces par défaut */
+    padding: 0;
+    margin: 0;
+}
+
+/* Style pour chaque sondage */
+/* Style pour le conteneur de la page */
+
+
+/* Style pour chaque sondage */
+.sondage-container {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px; /* Largeur fixe pour les carrés, ajustez selon vos besoins */
+    margin-left: 40px; /* Ajout de la marge à gauche */
+}
+
+
+/* Style pour le titre */
+.sondage-titre {
+    font-weight: bold;
+}
+
+/* Style pour la date */
+.sondage-date {
+    font-style: italic;
+}
+
+
+/* Style pour l'auteur */
+.sondage-auteur {
+    color: #888;
+}
+
+button {
+    margin-right: 8px;
+    margin-left: 8px;
+    height: 30px; /* Réduction de la hauteur */
+    width: 6em; /* Réduction de la largeur */
+    font-size: 0.9rem; /* Réduction de la taille de la police */
+    background-color: rebeccapurple;
+    border-radius: 10px; /* Réduction du rayon de la bordure */
+    color: white;
+}
+
+button:hover {
+    background-color: turquoise;
+    border-color: rebeccapurple;
+}

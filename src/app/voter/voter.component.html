@@ -1,0 +1,25 @@
+<div *ngIf="data">
+    <h2>{{ data.Titre }}</h2>
+    <p>Date: {{ data.Date }}</p>
+    <p>Description: {{ data.Description }}</p>
+    <p>Auteur: {{ data.Auteur }}</p>
+    
+    <div *ngFor="let question of data.Questions; let i = index">
+      <h3>{{ i + 1 }}) {{ question.Question }}</h3>
+      <div *ngIf="question.Options.length > 0">
+        <ul>
+          <li *ngFor="let option of question.Options">
+            <label>
+              <input type="radio" name="{{ question.Question }}" [value]="option.choix">
+              {{ option.choix }}
+            </label>
+            <span *ngIf="option.votants.length > 0">Votants: {{ mapVotants(option) }}</span>
+          </li>
+        </ul>
+      </div>
+      <div *ngIf="question.Options.length === 0">
+        <p>Aucune option disponible pour cette question.</p>
+      </div>
+    </div>
+    <button>Voter</button>
+</div>

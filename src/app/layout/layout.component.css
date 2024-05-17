@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bar {
+    font-size: 5rem;
+    background-color: turquoise;
+    color: rebeccapurple;
+    border-bottom: solid rebeccapurple 5px;
+    display: flex;
+    align-items: center; /* Centre les éléments verticalement */
+}
+
+.title {
+    margin-left: 20px; /* Éloigne le titre de la gauche */
+}
+
+.buttons {
+    margin-left: auto; /* Pousse les boutons à droite */
+    display: flex; /* Utilise Flexbox pour aligner les boutons */
+    align-items: center; /* Centre les boutons verticalement */
+}
+
+button {
+    height: 40px;
+    width: 8em;
+    font-size: 1rem;
+    background-color: rebeccapurple;
+    border-radius: 14px;
+    color: white;
+    margin-right: 8px;
+}
+
+button:hover {
+    background-color: rgb(7, 1, 14);
+}
